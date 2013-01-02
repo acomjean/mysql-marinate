@@ -1,4 +1,7 @@
+MYSQL Marinate HW1 - Set up GitHub
+------------------------------------------------------------------------------
 If you can see this locally, you have completed half the homework so far.
+
 If you like, you can go to 
 https://badgus-dev.allizom.org/en-US/
 to claim your badge for successfully checking out the github repository.
@@ -13,6 +16,7 @@ mkxemw
 
 Do not forget to finish this week's homework - edit this file and put the
 name you use on meetup.com into this file:
-(your name here)
+
+Aram (Comjean)
 
 Do not forget to do a pull request when your homework is complete.
