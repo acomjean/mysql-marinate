@@ -8,14 +8,14 @@ When you start typing a command hitting tab in the bash shell brings up options.
 2) What are the relative advantages of installing MySQL using the package,
  directory archive (tarball or "no-install", or compiled methods?
 
-a) pre-configured binary, easy
-b) compile it yourself,  you end up with  a custom compiled for your system so it will be optimized for your system. 
+a) pre-configured binary, easier.
+b) if you compile it yourself from source,  you end up with  a custom compiled for your system so it will be optimized for your system. 
 but its more difficult.  
 
 3) How do you verify the integrity of downloaded packages?
 
 md5.  
-from the command line type md5 <filename>.  Match number with number from website 
+from the command line type md5 <filename>.  Match number with string from website. 
 
 4) How do you add the MySQL bin directory to the operating system path?
 
@@ -32,7 +32,7 @@ Additional Exercises (not in the book):
 1) Document how you installed MySQL and any issues you came across with installation. 
  (The goal is to be easy to install it again on a similar machine.)
 
-a) upgrade to oracle sign in from mysql ab
+a) side-grade to oracle login in from mysql ab
 b) select osx
 c) download DMG archive
 d) check md5
@@ -43,7 +43,7 @@ g) install the preference pane
 go to shell
 h) run /usr/local/mysql/scripts/mysql_install_db
 i) set password for root account
-
+j) open system preferences/ mysql pane and configure to run at startup.  From that panel the server can be started/stopped as well.
 
 2) Document where important files should be.
 
@@ -53,10 +53,8 @@ main folder
 command line tools:
 /usr/local/mysql/bin
 
-binaries:
+supporting files:
 /usr/local/mysql-5.5.29-osx10.5-x86_64
 
 
 
-
-Do not forget to do a pull request when your homework is complete.
