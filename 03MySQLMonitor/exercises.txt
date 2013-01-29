@@ -1,9 +1,64 @@
 1. What do we mean when we say that MySQL has a client-server architecture?
 
+The database is the server.  Command are sent to the server via client software (mysql on the command line, phpmyadin or a gui client like sequel pro).  The Mysql server processes the commands and sends replies.
+
 2. Use the monitor help to look up information on the SELECT statement. (We’ll discuss SELECT in detail in Chapter 5.)
 
-3. What is the difference between using the monitor in interactive mode and using
-the monitor in batch mode?
+mysql> help select
+Name: 'SELECT'
+Description:
+Syntax:
+SELECT
+    [ALL | DISTINCT | DISTINCTROW ]
+      [HIGH_PRIORITY]
+      [STRAIGHT_JOIN]
+      [SQL_SMALL_RESULT] [SQL_BIG_RESULT] [SQL_BUFFER_RESULT]
+      [SQL_CACHE | SQL_NO_CACHE] [SQL_CALC_FOUND_ROWS]
+    select_expr [, select_expr ...]
+    [FROM table_references
+    [WHERE where_condition]
+    [GROUP BY {col_name | expr | position}
+      [ASC | DESC], ... [WITH ROLLUP]]
+    [HAVING where_condition]
+    [ORDER BY {col_name | expr | position}
+      [ASC | DESC], ...]
+    [LIMIT {[offset,] row_count | row_count OFFSET offset}]
+    [PROCEDURE procedure_name(argument_list)]
+    [INTO OUTFILE 'file_name'
+        [CHARACTER SET charset_name]
+        export_options
+      | INTO DUMPFILE 'file_name'
+      | INTO var_name [, var_name]]
+    [FOR UPDATE | LOCK IN SHARE MODE]]
+
+SELECT is used to retrieve rows selected from one or more tables, and
+can include UNION statements and subqueries. See [HELP UNION], and
+http://dev.mysql.com/doc/refman/5.5/en/subqueries.html.
+...............
+
+3. What is the difference between using the monitor in interactive mode and using the monitor in batch mode?
+
+interactive mode you type commands in and it processes them.  In batch mode all the commands are in a file and run one after another.  
+
 
 4. What do the monitor user, password, and database options do?
+
+--user
+mysql --user=<my uesrname>  
+mysql -u <my uesrname>  
+-attempte to connect the mysql server with the username.
+
+--password
+mysql --user=<username> --password=<password>
+
+mysql on mac seems to get rid of the password on the command line from the process list.
+>ps-ef |grep password
+mysql --user=root --password=x xxxx
+
+using just -p Prompts for a password 
+
+--database
+using the --database flag automatically sets the databse to the one selected.
+mysql --user=root --password=<password> --database=testDB 
+ 
 
