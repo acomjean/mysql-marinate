@@ -1,12 +1,16 @@
 1. When would you use a weak entity?
 
+Weak entities are used when you have an entity thats partially dependent on another entity. 
 
 2. Is it better to use entities instead of attributes?
 
+Entities are described (made up of) attributes.  Multiple attributes can describe the entity.  Care must be take to set up the attributes.  
 
 3. Alter and extend the music database ER model so that it can store 
 compilations, where a compilation is an album that contains tracks by two 
 or more different artists.
+
+Altered ER diagram so that Albums aren't by artists Tracks are. Tracks can be by multiple artists.
 
 4. Create an ER diagram for an online media store using the following requirements:
  - There are two types of product: music CDs and video DVDs.
@@ -21,7 +25,7 @@ the requirements.
 
 Table 4-1. Video DVDs
 Title			Studio			Price
-Leonâ€”The Professional	Sony Pictures		$21.99
+Leonâ The Professional	Sony Pictures		$21.99
 Chicken Run		Dreamworks Video	$19.99
 
 Table 4-2. Music CDs
