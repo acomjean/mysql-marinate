@@ -6,7 +6,7 @@ When you start typing a command hitting tab in the bash shell brings up options.
 
 
 2) What are the relative advantages of installing MySQL using the package,
- directory archive (tarball or "no-install", or compiled methods?
+ directory archive (tarball or "no-install"), or compiled methods?
 
 a) pre-configured binary, easier.
 b) if you compile it yourself from source,  you end up with  a custom compiled for your system so it will be optimized for your system. 
@@ -47,6 +47,7 @@ j) open system preferences/ mysql pane and configure to run at startup.  From th
 
 2) Document where important files should be.
 
+<<<<<<< HEAD
 main folder
 /usr/local/mysql
 
@@ -58,3 +59,7 @@ supporting files:
 
 
 
+=======
+Do not forget to do a pull request when your homework is complete.
+http://www.meetup.com/Virtual-Tech-Self-Study/messages/boards/thread/29963152/
+>>>>>>> upstream/master
